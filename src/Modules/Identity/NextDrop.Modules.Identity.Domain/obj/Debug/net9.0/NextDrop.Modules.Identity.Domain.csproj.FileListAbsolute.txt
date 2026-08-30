@@ -1,0 +1,15 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\bin\Debug\net9.0\NextDrop.Modules.Identity.Domain.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\bin\Debug\net9.0\NextDrop.Modules.Identity.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\bin\Debug\net9.0\NextDrop.Modules.Identity.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.4F9B984C.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\refint\NextDrop.Modules.Identity.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\NextDrop.Modules.Identity.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Domain\obj\Debug\net9.0\ref\NextDrop.Modules.Identity.Domain.dll

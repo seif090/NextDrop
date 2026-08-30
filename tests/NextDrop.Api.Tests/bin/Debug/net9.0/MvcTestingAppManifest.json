@@ -1,0 +1,8 @@
+{
+  "NextDrop.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Api",
+  "NextDrop.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure",
+  "NextDrop.Modules.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application",
+  "NextDrop.Modules.Identity.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain",
+  "NextDrop.Modules.Identity.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Infrastructure",
+  "NextDrop.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel"
+}

@@ -1,0 +1,17 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.Modules.Identity.Application.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.Modules.Identity.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.Modules.Identity.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.Modules.Identity.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\bin\Debug\net9.0\NextDrop.Modules.Identity.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.AA2C8DA8.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\refint\NextDrop.Modules.Identity.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\ref\NextDrop.Modules.Identity.Application.dll

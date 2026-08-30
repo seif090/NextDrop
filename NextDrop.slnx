@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NextDrop.Api/NextDrop.Api.csproj" />
+    <Project Path="src/NextDrop.Infrastructure/NextDrop.Infrastructure.csproj" />
+    <Project Path="src/NextDrop.SharedKernel/NextDrop.SharedKernel.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Identity/">
+    <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Application/NextDrop.Modules.Identity.Application.csproj" />
+    <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Domain/NextDrop.Modules.Identity.Domain.csproj" />
+    <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NextDrop.Api.Tests/NextDrop.Api.Tests.csproj" />
+    <Project Path="tests/NextDrop.Application.Tests/NextDrop.Application.Tests.csproj" />
+    <Project Path="tests/NextDrop.Architecture.Tests/NextDrop.Architecture.Tests.csproj" />
+    <Project Path="tests/NextDrop.Domain.Tests/NextDrop.Domain.Tests.csproj" />
+    <Project Path="tests/NextDrop.Infrastructure.Tests/NextDrop.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

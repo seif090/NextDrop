@@ -1,0 +1,11 @@
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\bin\Debug\net9.0\NextDrop.SharedKernel.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\refint\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.SharedKernel\obj\Debug\net9.0\ref\NextDrop.SharedKernel.dll

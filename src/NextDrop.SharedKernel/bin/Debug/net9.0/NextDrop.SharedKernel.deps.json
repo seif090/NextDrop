@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "NextDrop.SharedKernel/1.0.0": {
+        "runtime": {
+          "NextDrop.SharedKernel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NextDrop.SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
