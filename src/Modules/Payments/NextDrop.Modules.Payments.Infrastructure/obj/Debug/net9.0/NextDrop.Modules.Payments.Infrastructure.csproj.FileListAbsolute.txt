@@ -44,3 +44,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.I
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\obj\Debug\net9.0\refint\NextDrop.Modules.Payments.Infrastructure.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\obj\Debug\net9.0\NextDrop.Modules.Payments.Infrastructure.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\obj\Debug\net9.0\ref\NextDrop.Modules.Payments.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb

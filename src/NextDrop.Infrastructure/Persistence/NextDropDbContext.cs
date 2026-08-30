@@ -6,6 +6,7 @@ using NextDrop.Modules.Catalog.Domain.Entities;
 using NextDrop.Modules.Delivery.Domain.Aggregates;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Identity.Domain.Entities;
+using NextDrop.Modules.Notifications.Domain.Aggregates;
 using NextDrop.Modules.Orders.Domain.Aggregates;
 using NextDrop.Modules.Orders.Domain.Entities;
 using NextDrop.Modules.Payments.Domain.Aggregates;
@@ -41,9 +42,14 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<Payment> Payments => Set<Payment>();
     public DbSet<Refund> Refunds => Set<Refund>();
     public DbSet<WebhookEvent> WebhookEvents => Set<WebhookEvent>();
+    public DbSet<Notification> Notifications => Set<Notification>();
+    public DbSet<NotificationTemplate> NotificationTemplates => Set<NotificationTemplate>();
+    public DbSet<UserNotificationPreference> UserNotificationPreferences => Set<UserNotificationPreference>();
+    public DbSet<ProcessedIntegrationEvent> ProcessedIntegrationEvents => Set<ProcessedIntegrationEvent>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        optionsBuilder.ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.CoreEventId.ManyServiceProvidersCreatedWarning));
         if (_interceptor != null)
         {
             optionsBuilder.AddInterceptors(_interceptor);

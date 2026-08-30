@@ -25,6 +25,11 @@
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Domain/NextDrop.Modules.Identity.Domain.csproj" />
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/Notifications/">
+    <Project Path="src/Modules/Notifications/NextDrop.Modules.Notifications.Application/NextDrop.Modules.Notifications.Application.csproj" />
+    <Project Path="src/Modules/Notifications/NextDrop.Modules.Notifications.Domain/NextDrop.Modules.Notifications.Domain.csproj" />
+    <Project Path="src/Modules/Notifications/NextDrop.Modules.Notifications.Infrastructure/NextDrop.Modules.Notifications.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Orders/">
     <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Application/NextDrop.Modules.Orders.Application.csproj" />
     <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Domain/NextDrop.Modules.Orders.Domain.csproj" />

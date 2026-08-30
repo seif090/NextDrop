@@ -25,6 +25,8 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly DeliveryApplicationAssembly = typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly;
     private static readonly System.Reflection.Assembly PaymentsDomainAssembly = typeof(NextDrop.Modules.Payments.Domain.Aggregates.Payment).Assembly;
     private static readonly System.Reflection.Assembly PaymentsApplicationAssembly = typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly;
+    private static readonly System.Reflection.Assembly NotificationsDomainAssembly = typeof(NextDrop.Modules.Notifications.Domain.Aggregates.Notification).Assembly;
+    private static readonly System.Reflection.Assembly NotificationsApplicationAssembly = typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -167,6 +169,37 @@ public class ArchitectureTests
             .HaveDependencyOnAll(
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Payments.Infrastructure",
+                "NextDrop.Api")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void NotificationsDomain_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(NotificationsDomainAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Notifications.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore",
+                "StackExchange.Redis",
+                "RabbitMQ.Client")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void NotificationsApplication_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(NotificationsApplicationAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Notifications.Infrastructure",
                 "NextDrop.Api")
             .GetResult();
 

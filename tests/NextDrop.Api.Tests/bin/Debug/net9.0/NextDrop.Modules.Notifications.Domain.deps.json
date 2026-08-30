@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "NextDrop.Modules.Notifications.Domain/1.0.0": {
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Notifications.Domain.dll": {}
+        }
+      },
+      "NextDrop.SharedKernel/1.0.0": {
+        "runtime": {
+          "NextDrop.SharedKernel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NextDrop.Modules.Notifications.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

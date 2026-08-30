@@ -2518,6 +2518,8 @@
           "NextDrop.Modules.Delivery.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
+          "NextDrop.Modules.Notifications.Application": "1.0.0",
+          "NextDrop.Modules.Notifications.Domain": "1.0.0",
           "NextDrop.Modules.Orders.Application": "1.0.0",
           "NextDrop.Modules.Orders.Domain": "1.0.0",
           "NextDrop.Modules.Payments.Application": "1.0.0",
@@ -2738,6 +2740,56 @@
         },
         "runtime": {
           "bin/placeholder/NextDrop.Modules.Identity.Infrastructure.dll": {}
+        }
+      },
+      "NextDrop.Modules.Notifications.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Delivery.Domain": "1.0.0",
+          "NextDrop.Modules.Notifications.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Payments.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Notifications.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Domain.dll": {}
+        }
+      },
+      "NextDrop.Modules.Notifications.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Notifications.Application": "1.0.0",
+          "NextDrop.Modules.Notifications.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Notifications.Infrastructure.dll": {}
         }
       },
       "NextDrop.Modules.Orders.Application/1.0.0": {
@@ -7235,6 +7287,21 @@
       "path": "../Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj",
       "msbuildProject": "../Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj"
     },
+    "NextDrop.Modules.Notifications.Application/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Notifications/NextDrop.Modules.Notifications.Application/NextDrop.Modules.Notifications.Application.csproj",
+      "msbuildProject": "../Modules/Notifications/NextDrop.Modules.Notifications.Application/NextDrop.Modules.Notifications.Application.csproj"
+    },
+    "NextDrop.Modules.Notifications.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Notifications/NextDrop.Modules.Notifications.Domain/NextDrop.Modules.Notifications.Domain.csproj",
+      "msbuildProject": "../Modules/Notifications/NextDrop.Modules.Notifications.Domain/NextDrop.Modules.Notifications.Domain.csproj"
+    },
+    "NextDrop.Modules.Notifications.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Notifications/NextDrop.Modules.Notifications.Infrastructure/NextDrop.Modules.Notifications.Infrastructure.csproj",
+      "msbuildProject": "../Modules/Notifications/NextDrop.Modules.Notifications.Infrastructure/NextDrop.Modules.Notifications.Infrastructure.csproj"
+    },
     "NextDrop.Modules.Orders.Application/1.0.0": {
       "type": "project",
       "path": "../Modules/Orders/NextDrop.Modules.Orders.Application/NextDrop.Modules.Orders.Application.csproj",
@@ -7302,6 +7369,9 @@
       "NextDrop.Modules.Identity.Application >= 1.0.0",
       "NextDrop.Modules.Identity.Domain >= 1.0.0",
       "NextDrop.Modules.Identity.Infrastructure >= 1.0.0",
+      "NextDrop.Modules.Notifications.Application >= 1.0.0",
+      "NextDrop.Modules.Notifications.Domain >= 1.0.0",
+      "NextDrop.Modules.Notifications.Infrastructure >= 1.0.0",
       "NextDrop.Modules.Orders.Application >= 1.0.0",
       "NextDrop.Modules.Orders.Domain >= 1.0.0",
       "NextDrop.Modules.Orders.Infrastructure >= 1.0.0",
@@ -7376,6 +7446,15 @@
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Infrastructure\\NextDrop.Modules.Identity.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Infrastructure\\NextDrop.Modules.Identity.Infrastructure.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Application\\NextDrop.Modules.Notifications.Application.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Application\\NextDrop.Modules.Notifications.Application.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Domain\\NextDrop.Modules.Notifications.Domain.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Domain\\NextDrop.Modules.Notifications.Domain.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Infrastructure\\NextDrop.Modules.Notifications.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Notifications\\NextDrop.Modules.Notifications.Infrastructure\\NextDrop.Modules.Notifications.Infrastructure.csproj"
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj"

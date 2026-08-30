@@ -44,3 +44,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infra
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Orders\NextDrop.Modules.Orders.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb

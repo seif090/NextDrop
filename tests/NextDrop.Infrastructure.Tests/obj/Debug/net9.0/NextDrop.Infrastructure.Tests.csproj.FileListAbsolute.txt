@@ -210,3 +210,7 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\ne
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb

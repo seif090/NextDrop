@@ -547,3 +547,9 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDr
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Infrastructure.pdb

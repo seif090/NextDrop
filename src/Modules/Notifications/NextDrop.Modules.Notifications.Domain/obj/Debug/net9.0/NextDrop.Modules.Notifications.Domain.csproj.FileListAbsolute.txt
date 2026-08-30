@@ -1,0 +1,16 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.EB03699F.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\refint\NextDrop.Modules.Notifications.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\obj\Debug\net9.0\ref\NextDrop.Modules.Notifications.Domain.dll

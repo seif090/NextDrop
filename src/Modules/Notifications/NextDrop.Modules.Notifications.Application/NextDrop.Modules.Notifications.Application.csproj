@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NextDrop.Modules.Notifications.Domain\NextDrop.Modules.Notifications.Domain.csproj" />
+    <ProjectReference Include="..\..\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\..\Orders\NextDrop.Modules.Orders.Domain\NextDrop.Modules.Orders.Domain.csproj" />
+    <ProjectReference Include="..\..\Delivery\NextDrop.Modules.Delivery.Domain\NextDrop.Modules.Delivery.Domain.csproj" />
+    <ProjectReference Include="..\..\Payments\NextDrop.Modules.Payments.Domain\NextDrop.Modules.Payments.Domain.csproj" />
+    <ProjectReference Include="..\..\..\NextDrop.SharedKernel\NextDrop.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+</Project>

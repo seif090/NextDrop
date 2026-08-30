@@ -35,6 +35,8 @@
     <ProjectReference Include="..\..\src\Modules\Delivery\NextDrop.Modules.Delivery.Domain\NextDrop.Modules.Delivery.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Payments\NextDrop.Modules.Payments.Application\NextDrop.Modules.Payments.Application.csproj" />
     <ProjectReference Include="..\..\src\Modules\Payments\NextDrop.Modules.Payments.Domain\NextDrop.Modules.Payments.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Notifications\NextDrop.Modules.Notifications.Application\NextDrop.Modules.Notifications.Application.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\NextDrop.Modules.Notifications.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDrop.Modules.Customers.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f708815d7977fec40ded09f501dd85d39f93cc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d01bcff18f7cee471293f4540b92feed31ba2c97")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDrop.Modules.Customers.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDrop.Modules.Customers.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

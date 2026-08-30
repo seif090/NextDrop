@@ -22,6 +22,10 @@ using NextDrop.Modules.Catalog.Infrastructure;
 using NextDrop.Modules.Orders.Infrastructure;
 using NextDrop.Modules.Delivery.Infrastructure;
 using NextDrop.Modules.Payments.Infrastructure;
+using NextDrop.Modules.Notifications.Infrastructure;
+using NextDrop.Modules.Notifications.Application.Abstractions;
+using NextDrop.Api.Services;
+using NextDrop.Api.Hubs;
 using NextDrop.SharedKernel.Abstractions;
 using Serilog;
 
@@ -74,7 +78,8 @@ builder.Services.AddMediatR(cfg =>
         typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly,
         typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly,
         typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly,
-        typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly));
+        typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly,
+        typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly));
 
 builder.Services.AddValidatorsFromAssemblies(new[]
 {
@@ -84,7 +89,8 @@ builder.Services.AddValidatorsFromAssemblies(new[]
     typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly,
     typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly,
     typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly,
-    typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly
+    typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly,
+    typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly
 });
 
 builder.Services.AddCustomersModule();
@@ -93,6 +99,10 @@ builder.Services.AddCatalogModule();
 builder.Services.AddOrdersModule();
 builder.Services.AddDeliveryModule();
 builder.Services.AddPaymentsModule();
+builder.Services.AddNotificationsModule();
+
+builder.Services.AddSignalR();
+builder.Services.AddScoped<IRealTimeNotificationPublisher, SignalRRealTimeNotificationPublisher>();
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
@@ -113,6 +123,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = jwtOptions.Audience,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SecretKey)),
             ClockSkew = TimeSpan.Zero
+        };
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                var accessToken = context.Request.Query["access_token"];
+                var path = context.HttpContext.Request.Path;
+                if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs"))
+                {
+                    context.Token = accessToken;
+                }
+                return Task.CompletedTask;
+            }
         };
     });
 
@@ -192,6 +215,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<OrderTrackingHub>("/hubs/orders");
 
 app.MapHealthChecks("/health/live", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
 {

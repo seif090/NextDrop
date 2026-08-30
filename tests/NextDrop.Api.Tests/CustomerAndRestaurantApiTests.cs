@@ -45,6 +45,7 @@ public class CustomerAndRestaurantApiTests : IClassFixture<WebApplicationFactory
                 services.AddDbContext<NextDropDbContext>((sp, options) =>
                 {
                     var interceptor = sp.GetService<DomainEventsToOutboxInterceptor>();
+                    options.ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.CoreEventId.ManyServiceProvidersCreatedWarning));
                     var opts = options.UseInMemoryDatabase(_dbName, dbRoot);
                     if (interceptor != null)
                     {
@@ -62,6 +63,11 @@ public class CustomerAndRestaurantApiTests : IClassFixture<WebApplicationFactory
 
         var regCommand = new RegisterUserCommand(email, "SecurePwd123!", "Test", "User", "+1234567890");
         var regResponse = await client.PostAsJsonAsync("/api/v1/auth/register", regCommand);
+        if (!regResponse.IsSuccessStatusCode)
+        {
+            var err = await regResponse.Content.ReadAsStringAsync();
+            throw new Exception($"Register failed: {regResponse.StatusCode} - {err}");
+        }
         var regData = await regResponse.Content.ReadFromJsonAsync<RegisterUserResponse>();
 
         using (var scope = _factory.Services.CreateScope())
@@ -201,7 +207,7 @@ public class CustomerAndRestaurantApiTests : IClassFixture<WebApplicationFactory
         var anonClient = _factory.CreateClient();
 
         // Act
-        var response = await anonClient.PostAsJsonAsync("/api/v1/restaurants", new CreateRestaurantRequest("Anon Rest", "Desc", "+1", "anon@rest.com"));
+        var response = await anonClient.PostAsJsonAsync("/api/v1/restaurants", new CreateRestaurantRequest("Anon Rest", "Desc", "+1234567890", "anon@rest.com"));
 
         // Assert: 401 Unauthorized
         response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);

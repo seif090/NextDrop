@@ -44,6 +44,7 @@ public class CatalogApiTests : IClassFixture<WebApplicationFactory<Program>>
                 services.AddDbContext<NextDropDbContext>((sp, options) =>
                 {
                     var interceptor = sp.GetService<DomainEventsToOutboxInterceptor>();
+                    options.ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.CoreEventId.ManyServiceProvidersCreatedWarning));
                     var opts = options.UseInMemoryDatabase(_dbName, dbRoot);
                     if (interceptor != null)
                     {
@@ -61,6 +62,7 @@ public class CatalogApiTests : IClassFixture<WebApplicationFactory<Program>>
 
         var regCommand = new RegisterUserCommand(email, "SecurePwd123!", "Test", "User", "+1234567890");
         var regResponse = await client.PostAsJsonAsync("/api/v1/auth/register", regCommand);
+        regResponse.EnsureSuccessStatusCode();
         var regData = await regResponse.Content.ReadFromJsonAsync<RegisterUserResponse>();
 
         using (var scope = _factory.Services.CreateScope())
