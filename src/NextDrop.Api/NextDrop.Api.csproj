@@ -23,6 +23,9 @@
     <ProjectReference Include="..\Modules\Notifications\NextDrop.Modules.Notifications.Infrastructure\NextDrop.Modules.Notifications.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Notifications\NextDrop.Modules.Notifications.Application\NextDrop.Modules.Notifications.Application.csproj" />
     <ProjectReference Include="..\Modules\Notifications\NextDrop.Modules.Notifications.Domain\NextDrop.Modules.Notifications.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Discovery\NextDrop.Modules.Discovery.Infrastructure\NextDrop.Modules.Discovery.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Discovery\NextDrop.Modules.Discovery.Application\NextDrop.Modules.Discovery.Application.csproj" />
+    <ProjectReference Include="..\Modules\Discovery\NextDrop.Modules.Discovery.Domain\NextDrop.Modules.Discovery.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

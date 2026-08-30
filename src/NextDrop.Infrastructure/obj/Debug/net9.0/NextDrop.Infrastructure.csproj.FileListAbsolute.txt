@@ -46,3 +46,7 @@ C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\Nex
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.pdb

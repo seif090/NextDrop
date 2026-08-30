@@ -1,0 +1,16 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.F860F2F3.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\refint\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\obj\Debug\net9.0\ref\NextDrop.Modules.Discovery.Domain.dll

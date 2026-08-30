@@ -48,3 +48,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.I
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb

@@ -251,3 +251,9 @@ C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modul
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Notifications.Infrastructure.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Notifications.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb

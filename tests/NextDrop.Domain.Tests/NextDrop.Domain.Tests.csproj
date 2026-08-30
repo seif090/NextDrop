@@ -29,6 +29,7 @@
     <ProjectReference Include="..\..\src\Modules\Delivery\NextDrop.Modules.Delivery.Domain\NextDrop.Modules.Delivery.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Payments\NextDrop.Modules.Payments.Domain\NextDrop.Modules.Payments.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Notifications\NextDrop.Modules.Notifications.Domain\NextDrop.Modules.Notifications.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Discovery\NextDrop.Modules.Discovery.Domain\NextDrop.Modules.Discovery.Domain.csproj" />
   </ItemGroup>
 
 </Project>

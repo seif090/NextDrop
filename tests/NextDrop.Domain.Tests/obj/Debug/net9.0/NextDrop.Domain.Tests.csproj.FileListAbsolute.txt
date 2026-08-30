@@ -118,3 +118,5 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\Nex
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Notifications.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Discovery.Domain.pdb

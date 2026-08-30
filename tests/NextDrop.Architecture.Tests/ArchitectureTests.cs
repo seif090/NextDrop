@@ -27,6 +27,8 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly PaymentsApplicationAssembly = typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly;
     private static readonly System.Reflection.Assembly NotificationsDomainAssembly = typeof(NextDrop.Modules.Notifications.Domain.Aggregates.Notification).Assembly;
     private static readonly System.Reflection.Assembly NotificationsApplicationAssembly = typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly;
+    private static readonly System.Reflection.Assembly DiscoveryDomainAssembly = typeof(NextDrop.Modules.Discovery.Domain.Enums.DiscoverySort).Assembly;
+    private static readonly System.Reflection.Assembly DiscoveryApplicationAssembly = typeof(NextDrop.Modules.Discovery.Application.Queries.GetPublicRestaurantsQuery).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -201,6 +203,37 @@ public class ArchitectureTests
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Notifications.Infrastructure",
                 "NextDrop.Api")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void DiscoveryDomain_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(DiscoveryDomainAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Discovery.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore",
+                "StackExchange.Redis")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void DiscoveryApplication_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(DiscoveryApplicationAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Discovery.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();

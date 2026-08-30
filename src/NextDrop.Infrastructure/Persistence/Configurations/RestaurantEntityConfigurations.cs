@@ -24,6 +24,7 @@ public class RestaurantConfiguration : IEntityTypeConfiguration<Restaurant>
         builder.Property(r => r.PhoneNumber).HasMaxLength(20).IsRequired();
         builder.Property(r => r.Email).HasMaxLength(150).IsRequired();
         builder.Property(r => r.Status).HasConversion<int>().IsRequired();
+        builder.HasIndex(r => r.Status);
 
         builder.HasMany(r => r.Branches)
             .WithOne()
@@ -60,6 +61,7 @@ public class RestaurantBranchConfiguration : IEntityTypeConfiguration<Restaurant
         builder.Property(b => b.Longitude).HasPrecision(9, 6).IsRequired();
         builder.Property(b => b.Timezone).HasMaxLength(50).HasDefaultValue("UTC");
         builder.Property(b => b.Status).HasConversion<int>().IsRequired();
+        builder.HasIndex(b => new { b.Status, b.City, b.District });
 
         builder.OwnsMany(b => b.OperatingHours, h =>
         {

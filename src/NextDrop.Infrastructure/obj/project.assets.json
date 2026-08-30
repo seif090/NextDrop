@@ -1301,6 +1301,38 @@
           "bin/placeholder/NextDrop.Modules.Delivery.Domain.dll": {}
         }
       },
+      "NextDrop.Modules.Discovery.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Discovery.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Discovery.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Domain.dll": {}
+        }
+      },
       "NextDrop.Modules.Identity.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3363,6 +3395,16 @@
       "path": "../Modules/Delivery/NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj",
       "msbuildProject": "../Modules/Delivery/NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj"
     },
+    "NextDrop.Modules.Discovery.Application/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Discovery/NextDrop.Modules.Discovery.Application/NextDrop.Modules.Discovery.Application.csproj",
+      "msbuildProject": "../Modules/Discovery/NextDrop.Modules.Discovery.Application/NextDrop.Modules.Discovery.Application.csproj"
+    },
+    "NextDrop.Modules.Discovery.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Discovery/NextDrop.Modules.Discovery.Domain/NextDrop.Modules.Discovery.Domain.csproj",
+      "msbuildProject": "../Modules/Discovery/NextDrop.Modules.Discovery.Domain/NextDrop.Modules.Discovery.Domain.csproj"
+    },
     "NextDrop.Modules.Identity.Application/1.0.0": {
       "type": "project",
       "path": "../Modules/Identity/NextDrop.Modules.Identity.Application/NextDrop.Modules.Identity.Application.csproj",
@@ -3434,6 +3476,8 @@
       "NextDrop.Modules.Customers.Domain >= 1.0.0",
       "NextDrop.Modules.Delivery.Application >= 1.0.0",
       "NextDrop.Modules.Delivery.Domain >= 1.0.0",
+      "NextDrop.Modules.Discovery.Application >= 1.0.0",
+      "NextDrop.Modules.Discovery.Domain >= 1.0.0",
       "NextDrop.Modules.Identity.Application >= 1.0.0",
       "NextDrop.Modules.Identity.Domain >= 1.0.0",
       "NextDrop.Modules.Notifications.Application >= 1.0.0",
@@ -3503,6 +3547,12 @@
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Discovery\\NextDrop.Modules.Discovery.Application\\NextDrop.Modules.Discovery.Application.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Discovery\\NextDrop.Modules.Discovery.Application\\NextDrop.Modules.Discovery.Application.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Discovery\\NextDrop.Modules.Discovery.Domain\\NextDrop.Modules.Discovery.Domain.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Discovery\\NextDrop.Modules.Discovery.Domain\\NextDrop.Modules.Discovery.Domain.csproj"
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj"

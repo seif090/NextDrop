@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDrop.Modules.Notifications.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d01bcff18f7cee471293f4540b92feed31ba2c97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f1eab10d1aeaeaaf351df7f79b6e382626cbbc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDrop.Modules.Notifications.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDrop.Modules.Notifications.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

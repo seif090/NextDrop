@@ -23,6 +23,7 @@ using NextDrop.Modules.Orders.Infrastructure;
 using NextDrop.Modules.Delivery.Infrastructure;
 using NextDrop.Modules.Payments.Infrastructure;
 using NextDrop.Modules.Notifications.Infrastructure;
+using NextDrop.Modules.Discovery.Infrastructure;
 using NextDrop.Modules.Notifications.Application.Abstractions;
 using NextDrop.Api.Services;
 using NextDrop.Api.Hubs;
@@ -79,7 +80,8 @@ builder.Services.AddMediatR(cfg =>
         typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly,
         typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly,
         typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly,
-        typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly));
+        typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly,
+        typeof(NextDrop.Modules.Discovery.Application.Queries.GetPublicRestaurantsQuery).Assembly));
 
 builder.Services.AddValidatorsFromAssemblies(new[]
 {
@@ -90,7 +92,8 @@ builder.Services.AddValidatorsFromAssemblies(new[]
     typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly,
     typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly,
     typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly,
-    typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly
+    typeof(NextDrop.Modules.Notifications.Application.Commands.CreateNotificationCommand).Assembly,
+    typeof(NextDrop.Modules.Discovery.Application.Queries.GetPublicRestaurantsQuery).Assembly
 });
 
 builder.Services.AddCustomersModule();
@@ -100,6 +103,7 @@ builder.Services.AddOrdersModule();
 builder.Services.AddDeliveryModule();
 builder.Services.AddPaymentsModule();
 builder.Services.AddNotificationsModule();
+builder.Services.AddDiscoveryModule(builder.Configuration);
 
 builder.Services.AddSignalR();
 builder.Services.AddScoped<IRealTimeNotificationPublisher, SignalRRealTimeNotificationPublisher>();

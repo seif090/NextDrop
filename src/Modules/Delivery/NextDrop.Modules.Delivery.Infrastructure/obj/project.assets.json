@@ -1216,6 +1216,8 @@
           "NextDrop.Modules.Customers.Domain": "1.0.0",
           "NextDrop.Modules.Delivery.Application": "1.0.0",
           "NextDrop.Modules.Delivery.Domain": "1.0.0",
+          "NextDrop.Modules.Discovery.Application": "1.0.0",
+          "NextDrop.Modules.Discovery.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
           "NextDrop.Modules.Notifications.Application": "1.0.0",
@@ -1341,6 +1343,38 @@
         },
         "runtime": {
           "bin/placeholder/NextDrop.Modules.Delivery.Domain.dll": {}
+        }
+      },
+      "NextDrop.Modules.Discovery.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Discovery.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Discovery.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Discovery.Domain.dll": {}
         }
       },
       "NextDrop.Modules.Identity.Application/1.0.0": {
@@ -3409,6 +3443,16 @@
       "type": "project",
       "path": "../NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj",
       "msbuildProject": "../NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj"
+    },
+    "NextDrop.Modules.Discovery.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Discovery/NextDrop.Modules.Discovery.Application/NextDrop.Modules.Discovery.Application.csproj",
+      "msbuildProject": "../../Discovery/NextDrop.Modules.Discovery.Application/NextDrop.Modules.Discovery.Application.csproj"
+    },
+    "NextDrop.Modules.Discovery.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Discovery/NextDrop.Modules.Discovery.Domain/NextDrop.Modules.Discovery.Domain.csproj",
+      "msbuildProject": "../../Discovery/NextDrop.Modules.Discovery.Domain/NextDrop.Modules.Discovery.Domain.csproj"
     },
     "NextDrop.Modules.Identity.Application/1.0.0": {
       "type": "project",
