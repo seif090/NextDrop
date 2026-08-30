@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDrop.Modules.Identity.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd54338d56dae997f7291ffafd7027e439c4d9c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579509ba7eca7ad8247de1b8963654c8c4023f94")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDrop.Modules.Identity.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDrop.Modules.Identity.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,6 +20,11 @@
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Domain/NextDrop.Modules.Identity.Domain.csproj" />
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/Orders/">
+    <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Application/NextDrop.Modules.Orders.Application.csproj" />
+    <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Domain/NextDrop.Modules.Orders.Domain.csproj" />
+    <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Infrastructure/NextDrop.Modules.Orders.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Restaurants/">
     <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Application/NextDrop.Modules.Restaurants.Application.csproj" />
     <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Domain/NextDrop.Modules.Restaurants.Domain.csproj" />

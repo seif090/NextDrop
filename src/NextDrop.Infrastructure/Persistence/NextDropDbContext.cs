@@ -5,6 +5,8 @@ using NextDrop.Modules.Catalog.Domain.Aggregates;
 using NextDrop.Modules.Catalog.Domain.Entities;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Identity.Domain.Entities;
+using NextDrop.Modules.Orders.Domain.Aggregates;
+using NextDrop.Modules.Orders.Domain.Entities;
 using NextDrop.SharedKernel.Abstractions;
 
 namespace NextDrop.Infrastructure.Persistence;
@@ -28,6 +30,10 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<Catalog> Catalogs => Set<Catalog>();
     public DbSet<MenuItem> MenuItems => Set<MenuItem>();
     public DbSet<BranchMenuItemAvailability> BranchMenuItemAvailabilities => Set<BranchMenuItemAvailability>();
+    public DbSet<Cart> Carts => Set<Cart>();
+    public DbSet<CartItem> CartItems => Set<CartItem>();
+    public DbSet<Order> Orders => Set<Order>();
+    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

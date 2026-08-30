@@ -30,6 +30,7 @@
     <ProjectReference Include="..\..\src\Modules\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\NextDrop.Modules.Restaurants.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Catalog\NextDrop.Modules.Catalog.Domain\NextDrop.Modules.Catalog.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Orders\NextDrop.Modules.Orders.Domain\NextDrop.Modules.Orders.Domain.csproj" />
   </ItemGroup>
 
 </Project>

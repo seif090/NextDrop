@@ -3,6 +3,7 @@ using NetArchTest.Rules;
 using NextDrop.Modules.Catalog.Domain.Aggregates;
 using NextDrop.Modules.Customers.Domain.Aggregates;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
+using NextDrop.Modules.Orders.Domain.Aggregates;
 using NextDrop.Modules.Restaurants.Domain.Aggregates;
 using NextDrop.SharedKernel.Common;
 using Xunit;
@@ -17,6 +18,8 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly CustomersDomainAssembly = typeof(Customer).Assembly;
     private static readonly System.Reflection.Assembly RestaurantsDomainAssembly = typeof(Restaurant).Assembly;
     private static readonly System.Reflection.Assembly CatalogDomainAssembly = typeof(Catalog).Assembly;
+    private static readonly System.Reflection.Assembly OrdersDomainAssembly = typeof(Order).Assembly;
+    private static readonly System.Reflection.Assembly OrdersApplicationAssembly = typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -87,6 +90,37 @@ public class ArchitectureTests
                 "NextDrop.Modules.Catalog.Infrastructure",
                 "NextDrop.Api",
                 "Microsoft.EntityFrameworkCore")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void OrdersDomain_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(OrdersDomainAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Orders.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void OrdersApplication_ShouldNotDependOnModuleInfrastructuresOrApi()
+    {
+        var result = Types.InAssembly(OrdersApplicationAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Modules.Orders.Infrastructure",
+                "NextDrop.Modules.Customers.Infrastructure",
+                "NextDrop.Modules.Restaurants.Infrastructure",
+                "NextDrop.Modules.Catalog.Infrastructure",
+                "NextDrop.Api")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();

@@ -10,6 +10,8 @@
     <ProjectReference Include="..\Modules\Restaurants\NextDrop.Modules.Restaurants.Application\NextDrop.Modules.Restaurants.Application.csproj" />
     <ProjectReference Include="..\Modules\Catalog\NextDrop.Modules.Catalog.Domain\NextDrop.Modules.Catalog.Domain.csproj" />
     <ProjectReference Include="..\Modules\Catalog\NextDrop.Modules.Catalog.Application\NextDrop.Modules.Catalog.Application.csproj" />
+    <ProjectReference Include="..\Modules\Orders\NextDrop.Modules.Orders.Domain\NextDrop.Modules.Orders.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Orders\NextDrop.Modules.Orders.Application\NextDrop.Modules.Orders.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

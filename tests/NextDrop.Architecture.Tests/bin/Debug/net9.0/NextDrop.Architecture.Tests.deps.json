@@ -18,6 +18,7 @@
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
           "NextDrop.Modules.Restaurants.Domain": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
           "xunit": "2.9.2"
@@ -1237,6 +1238,9 @@
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Infrastructure": "1.0.0",
           "NextDrop.Modules.Restaurants.Infrastructure": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.3",
@@ -1264,6 +1268,8 @@
           "NextDrop.Modules.Customers.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
           "NextDrop.Modules.Restaurants.Application": "1.0.0",
           "NextDrop.Modules.Restaurants.Domain": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
@@ -1403,6 +1409,55 @@
         },
         "runtime": {
           "NextDrop.Modules.Identity.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Orders.Application/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.2.0",
+          "NextDrop.Modules.Catalog.Application": "1.0.0",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Customers.Application": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Orders.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Orders.Domain/1.0.0": {
+        "dependencies": {
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Orders.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Orders.Infrastructure/1.0.0": {
+        "dependencies": {
+          "NextDrop.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Orders.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2104,6 +2159,21 @@
       "sha512": ""
     },
     "NextDrop.Modules.Identity.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Orders.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Orders.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Orders.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

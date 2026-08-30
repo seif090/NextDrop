@@ -19,6 +19,7 @@ using NextDrop.Modules.Identity.Infrastructure.Services;
 using NextDrop.Modules.Customers.Infrastructure;
 using NextDrop.Modules.Restaurants.Infrastructure;
 using NextDrop.Modules.Catalog.Infrastructure;
+using NextDrop.Modules.Orders.Infrastructure;
 using NextDrop.SharedKernel.Abstractions;
 using Serilog;
 
@@ -68,19 +69,22 @@ builder.Services.AddMediatR(cfg =>
         typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly,
         typeof(NextDrop.Modules.Customers.Application.Commands.CreateOrUpdateCustomerProfileCommand).Assembly,
         typeof(NextDrop.Modules.Restaurants.Application.Commands.CreateRestaurantCommand).Assembly,
-        typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly));
+        typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly,
+        typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly));
 
 builder.Services.AddValidatorsFromAssemblies(new[]
 {
     typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly,
     typeof(NextDrop.Modules.Customers.Application.Commands.CreateOrUpdateCustomerProfileCommand).Assembly,
     typeof(NextDrop.Modules.Restaurants.Application.Commands.CreateRestaurantCommand).Assembly,
-    typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly
+    typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly,
+    typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly
 });
 
 builder.Services.AddCustomersModule();
 builder.Services.AddRestaurantsModule();
 builder.Services.AddCatalogModule();
+builder.Services.AddOrdersModule();
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

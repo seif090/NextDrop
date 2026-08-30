@@ -198,3 +198,7 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\ne
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Orders.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Orders.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Orders.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\NextDrop.Modules.Orders.Domain.pdb

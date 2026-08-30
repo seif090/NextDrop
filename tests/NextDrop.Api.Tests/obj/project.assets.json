@@ -2698,6 +2698,9 @@
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Infrastructure": "1.0.0",
           "NextDrop.Modules.Restaurants.Infrastructure": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.3",
@@ -2730,6 +2733,8 @@
           "NextDrop.Modules.Customers.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
           "NextDrop.Modules.Restaurants.Application": "1.0.0",
           "NextDrop.Modules.Restaurants.Domain": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
@@ -2891,6 +2896,61 @@
         },
         "runtime": {
           "bin/placeholder/NextDrop.Modules.Identity.Infrastructure.dll": {}
+        }
+      },
+      "NextDrop.Modules.Orders.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Catalog.Application": "1.0.0",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Customers.Application": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Orders.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Orders.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Orders.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Orders.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Orders.Domain.dll": {}
+        }
+      },
+      "NextDrop.Modules.Orders.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Orders.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Orders.Infrastructure.dll": {}
         }
       },
       "NextDrop.Modules.Restaurants.Application/1.0.0": {
@@ -6908,6 +6968,21 @@
       "path": "../../src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj",
       "msbuildProject": "../../src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj"
     },
+    "NextDrop.Modules.Orders.Application/1.0.0": {
+      "type": "project",
+      "path": "../../src/Modules/Orders/NextDrop.Modules.Orders.Application/NextDrop.Modules.Orders.Application.csproj",
+      "msbuildProject": "../../src/Modules/Orders/NextDrop.Modules.Orders.Application/NextDrop.Modules.Orders.Application.csproj"
+    },
+    "NextDrop.Modules.Orders.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/Modules/Orders/NextDrop.Modules.Orders.Domain/NextDrop.Modules.Orders.Domain.csproj",
+      "msbuildProject": "../../src/Modules/Orders/NextDrop.Modules.Orders.Domain/NextDrop.Modules.Orders.Domain.csproj"
+    },
+    "NextDrop.Modules.Orders.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../src/Modules/Orders/NextDrop.Modules.Orders.Infrastructure/NextDrop.Modules.Orders.Infrastructure.csproj",
+      "msbuildProject": "../../src/Modules/Orders/NextDrop.Modules.Orders.Infrastructure/NextDrop.Modules.Orders.Infrastructure.csproj"
+    },
     "NextDrop.Modules.Restaurants.Application/1.0.0": {
       "type": "project",
       "path": "../../src/Modules/Restaurants/NextDrop.Modules.Restaurants.Application/NextDrop.Modules.Restaurants.Application.csproj",
@@ -6940,6 +7015,8 @@
       "NextDrop.Modules.Catalog.Domain >= 1.0.0",
       "NextDrop.Modules.Customers.Application >= 1.0.0",
       "NextDrop.Modules.Customers.Domain >= 1.0.0",
+      "NextDrop.Modules.Orders.Application >= 1.0.0",
+      "NextDrop.Modules.Orders.Domain >= 1.0.0",
       "NextDrop.Modules.Restaurants.Application >= 1.0.0",
       "NextDrop.Modules.Restaurants.Domain >= 1.0.0",
       "coverlet.collector >= 6.0.2",
@@ -6991,6 +7068,12 @@
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj"
             },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj"

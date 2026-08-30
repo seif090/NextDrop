@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NextDrop.SharedKernel\NextDrop.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\..\Restaurants\NextDrop.Modules.Restaurants.Domain\NextDrop.Modules.Restaurants.Domain.csproj" />
+    <ProjectReference Include="..\..\Catalog\NextDrop.Modules.Catalog.Domain\NextDrop.Modules.Catalog.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
