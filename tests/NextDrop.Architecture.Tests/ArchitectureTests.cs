@@ -1,5 +1,6 @@
 using FluentAssertions;
 using NetArchTest.Rules;
+using NextDrop.Modules.Catalog.Domain.Aggregates;
 using NextDrop.Modules.Customers.Domain.Aggregates;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Restaurants.Domain.Aggregates;
@@ -15,6 +16,7 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly IdentityApplicationAssembly = typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly;
     private static readonly System.Reflection.Assembly CustomersDomainAssembly = typeof(Customer).Assembly;
     private static readonly System.Reflection.Assembly RestaurantsDomainAssembly = typeof(Restaurant).Assembly;
+    private static readonly System.Reflection.Assembly CatalogDomainAssembly = typeof(Catalog).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -70,6 +72,21 @@ public class ArchitectureTests
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Restaurants.Infrastructure",
                 "NextDrop.Api")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void CatalogDomain_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(CatalogDomainAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Catalog.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();

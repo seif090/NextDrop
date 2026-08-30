@@ -221,3 +221,9 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Architecture.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Infrastructure.pdb

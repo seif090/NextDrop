@@ -5,6 +5,11 @@
     <Project Path="src/NextDrop.SharedKernel/NextDrop.SharedKernel.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Catalog/">
+    <Project Path="src/Modules/Catalog/NextDrop.Modules.Catalog.Application/NextDrop.Modules.Catalog.Application.csproj" />
+    <Project Path="src/Modules/Catalog/NextDrop.Modules.Catalog.Domain/NextDrop.Modules.Catalog.Domain.csproj" />
+    <Project Path="src/Modules/Catalog/NextDrop.Modules.Catalog.Infrastructure/NextDrop.Modules.Catalog.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Customers/">
     <Project Path="src/Modules/Customers/NextDrop.Modules.Customers.Application/NextDrop.Modules.Customers.Application.csproj" />
     <Project Path="src/Modules/Customers/NextDrop.Modules.Customers.Domain/NextDrop.Modules.Customers.Domain.csproj" />

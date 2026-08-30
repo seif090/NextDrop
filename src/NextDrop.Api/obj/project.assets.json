@@ -2510,6 +2510,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.2",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "10.0.11",
+          "NextDrop.Modules.Catalog.Application": "1.0.0",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
           "NextDrop.Modules.Customers.Application": "1.0.0",
           "NextDrop.Modules.Customers.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
@@ -2529,6 +2531,55 @@
         },
         "runtime": {
           "bin/placeholder/NextDrop.Infrastructure.dll": {}
+        }
+      },
+      "NextDrop.Modules.Catalog.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Catalog.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Domain.dll": {}
+        }
+      },
+      "NextDrop.Modules.Catalog.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Infrastructure": "1.0.0",
+          "NextDrop.Modules.Catalog.Application": "1.0.0",
+          "NextDrop.Modules.Catalog.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Infrastructure.dll": {}
         }
       },
       "NextDrop.Modules.Customers.Application/1.0.0": {
@@ -6952,6 +7003,21 @@
       "path": "../NextDrop.Infrastructure/NextDrop.Infrastructure.csproj",
       "msbuildProject": "../NextDrop.Infrastructure/NextDrop.Infrastructure.csproj"
     },
+    "NextDrop.Modules.Catalog.Application/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Catalog/NextDrop.Modules.Catalog.Application/NextDrop.Modules.Catalog.Application.csproj",
+      "msbuildProject": "../Modules/Catalog/NextDrop.Modules.Catalog.Application/NextDrop.Modules.Catalog.Application.csproj"
+    },
+    "NextDrop.Modules.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Catalog/NextDrop.Modules.Catalog.Domain/NextDrop.Modules.Catalog.Domain.csproj",
+      "msbuildProject": "../Modules/Catalog/NextDrop.Modules.Catalog.Domain/NextDrop.Modules.Catalog.Domain.csproj"
+    },
+    "NextDrop.Modules.Catalog.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Catalog/NextDrop.Modules.Catalog.Infrastructure/NextDrop.Modules.Catalog.Infrastructure.csproj",
+      "msbuildProject": "../Modules/Catalog/NextDrop.Modules.Catalog.Infrastructure/NextDrop.Modules.Catalog.Infrastructure.csproj"
+    },
     "NextDrop.Modules.Customers.Application/1.0.0": {
       "type": "project",
       "path": "../Modules/Customers/NextDrop.Modules.Customers.Application/NextDrop.Modules.Customers.Application.csproj",
@@ -7009,6 +7075,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.2",
       "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore >= 9.0.2",
       "NextDrop.Infrastructure >= 1.0.0",
+      "NextDrop.Modules.Catalog.Application >= 1.0.0",
+      "NextDrop.Modules.Catalog.Domain >= 1.0.0",
+      "NextDrop.Modules.Catalog.Infrastructure >= 1.0.0",
       "NextDrop.Modules.Customers.Infrastructure >= 1.0.0",
       "NextDrop.Modules.Identity.Application >= 1.0.0",
       "NextDrop.Modules.Identity.Domain >= 1.0.0",
@@ -7052,6 +7121,15 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+            },
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Infrastructure\\NextDrop.Modules.Catalog.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Infrastructure\\NextDrop.Modules.Catalog.Infrastructure.csproj"
+            },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Infrastructure\\NextDrop.Modules.Customers.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Infrastructure\\NextDrop.Modules.Customers.Infrastructure.csproj"
             },

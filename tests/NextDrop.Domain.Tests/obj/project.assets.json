@@ -425,6 +425,20 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "NextDrop.Modules.Catalog.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Catalog.Domain.dll": {}
+        }
+      },
       "NextDrop.Modules.Customers.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1020,6 +1034,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "NextDrop.Modules.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/Modules/Catalog/NextDrop.Modules.Catalog.Domain/NextDrop.Modules.Catalog.Domain.csproj",
+      "msbuildProject": "../../src/Modules/Catalog/NextDrop.Modules.Catalog.Domain/NextDrop.Modules.Catalog.Domain.csproj"
+    },
     "NextDrop.Modules.Customers.Domain/1.0.0": {
       "type": "project",
       "path": "../../src/Modules/Customers/NextDrop.Modules.Customers.Domain/NextDrop.Modules.Customers.Domain.csproj",
@@ -1045,6 +1064,7 @@
     "net9.0": [
       "FluentAssertions >= 8.10.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
+      "NextDrop.Modules.Catalog.Domain >= 1.0.0",
       "NextDrop.Modules.Customers.Domain >= 1.0.0",
       "NextDrop.Modules.Identity.Domain >= 1.0.0",
       "NextDrop.Modules.Restaurants.Domain >= 1.0.0",
@@ -1087,6 +1107,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+            },
             "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
               "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
             },

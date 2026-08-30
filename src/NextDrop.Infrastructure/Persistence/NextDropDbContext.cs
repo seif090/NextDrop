@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using NextDrop.Infrastructure.Persistence.Interceptors;
 using NextDrop.Infrastructure.Persistence.Outbox;
+using NextDrop.Modules.Catalog.Domain.Aggregates;
+using NextDrop.Modules.Catalog.Domain.Entities;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Identity.Domain.Entities;
 using NextDrop.SharedKernel.Abstractions;
@@ -23,6 +25,9 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
     public DbSet<NextDrop.Modules.Customers.Domain.Aggregates.Customer> Customers => Set<NextDrop.Modules.Customers.Domain.Aggregates.Customer>();
     public DbSet<NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant> Restaurants => Set<NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant>();
+    public DbSet<Catalog> Catalogs => Set<Catalog>();
+    public DbSet<MenuItem> MenuItems => Set<MenuItem>();
+    public DbSet<BranchMenuItemAvailability> BranchMenuItemAvailabilities => Set<BranchMenuItemAvailability>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

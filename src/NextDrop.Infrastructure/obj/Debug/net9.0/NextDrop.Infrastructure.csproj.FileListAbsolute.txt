@@ -26,3 +26,7 @@ C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\Nex
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Customers.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.pdb

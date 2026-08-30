@@ -28,3 +28,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaur
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\obj\Debug\net9.0\refint\NextDrop.Modules.Restaurants.Infrastructure.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Infrastructure.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\obj\Debug\net9.0\ref\NextDrop.Modules.Restaurants.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.pdb

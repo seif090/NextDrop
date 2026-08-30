@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDrop.Domain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cde31a3ef29e6ecbb9f6f38dc606932c094db648")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd54338d56dae997f7291ffafd7027e439c4d9c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDrop.Domain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDrop.Domain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

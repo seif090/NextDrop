@@ -8,6 +8,9 @@
     <ProjectReference Include="..\NextDrop.Infrastructure\NextDrop.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Customers\NextDrop.Modules.Customers.Infrastructure\NextDrop.Modules.Customers.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\NextDrop.Modules.Restaurants.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\NextDrop.Modules.Catalog.Infrastructure\NextDrop.Modules.Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\NextDrop.Modules.Catalog.Application\NextDrop.Modules.Catalog.Application.csproj" />
+    <ProjectReference Include="..\Modules\Catalog\NextDrop.Modules.Catalog.Domain\NextDrop.Modules.Catalog.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,9 @@
 {
   "NextDrop.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Api",
   "NextDrop.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure",
+  "NextDrop.Modules.Catalog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application",
+  "NextDrop.Modules.Catalog.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain",
+  "NextDrop.Modules.Catalog.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Infrastructure",
   "NextDrop.Modules.Customers.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application",
   "NextDrop.Modules.Customers.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain",
   "NextDrop.Modules.Customers.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Infrastructure",

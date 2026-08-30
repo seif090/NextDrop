@@ -18,6 +18,7 @@ using NextDrop.Modules.Identity.Infrastructure.Persistence.Repositories;
 using NextDrop.Modules.Identity.Infrastructure.Services;
 using NextDrop.Modules.Customers.Infrastructure;
 using NextDrop.Modules.Restaurants.Infrastructure;
+using NextDrop.Modules.Catalog.Infrastructure;
 using NextDrop.SharedKernel.Abstractions;
 using Serilog;
 
@@ -63,12 +64,23 @@ builder.Services.AddStackExchangeRedisCache(options =>
 builder.Services.AddSingleton<ICacheService, RedisCacheService>();
 
 builder.Services.AddMediatR(cfg =>
-    cfg.RegisterServicesFromAssembly(typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly));
+    cfg.RegisterServicesFromAssemblies(
+        typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly,
+        typeof(NextDrop.Modules.Customers.Application.Commands.CreateOrUpdateCustomerProfileCommand).Assembly,
+        typeof(NextDrop.Modules.Restaurants.Application.Commands.CreateRestaurantCommand).Assembly,
+        typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly));
 
-builder.Services.AddValidatorsFromAssembly(typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly);
+builder.Services.AddValidatorsFromAssemblies(new[]
+{
+    typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly,
+    typeof(NextDrop.Modules.Customers.Application.Commands.CreateOrUpdateCustomerProfileCommand).Assembly,
+    typeof(NextDrop.Modules.Restaurants.Application.Commands.CreateRestaurantCommand).Assembly,
+    typeof(NextDrop.Modules.Catalog.Application.Commands.CreateCatalogCommand).Assembly
+});
 
 builder.Services.AddCustomersModule();
 builder.Services.AddRestaurantsModule();
+builder.Services.AddCatalogModule();
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

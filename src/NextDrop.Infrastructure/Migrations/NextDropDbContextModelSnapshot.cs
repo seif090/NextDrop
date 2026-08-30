@@ -56,6 +56,252 @@ namespace NextDrop.Infrastructure.Migrations
                     b.ToTable("OutboxMessages", "messaging");
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Aggregates.Catalog", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<Guid>("RestaurantId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("catalogs", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Aggregates.MenuItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<decimal>("BasePrice")
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.Property<Guid>("RestaurantId")
+                        .HasColumnType("uuid");
+
+                    b.Property<uint>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("xid")
+                        .HasColumnName("xmin");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("menu_items", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.BranchMenuItemAvailability", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("MenuItemId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RestaurantBranchId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RestaurantId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantBranchId", "MenuItemId")
+                        .IsUnique();
+
+                    b.ToTable("branch_menu_item_availability", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.Category", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CatalogId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CatalogId");
+
+                    b.ToTable("categories", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.MenuItemVariant", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("MenuItemId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuItemId");
+
+                    b.ToTable("menu_item_variants", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.ModifierGroup", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsRequired")
+                        .HasColumnType("boolean");
+
+                    b.Property<int>("MaxSelections")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("MenuItemId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("MinSelections")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuItemId");
+
+                    b.ToTable("modifier_groups", "catalog");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.ModifierOption", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("ModifierGroupId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModifierGroupId");
+
+                    b.ToTable("modifier_options", "catalog");
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -486,6 +732,42 @@ namespace NextDrop.Infrastructure.Migrations
                     b.ToTable("staff_memberships", "restaurants");
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.Category", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Catalog.Domain.Aggregates.Catalog", null)
+                        .WithMany("Categories")
+                        .HasForeignKey("CatalogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.MenuItemVariant", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Catalog.Domain.Aggregates.MenuItem", null)
+                        .WithMany("Variants")
+                        .HasForeignKey("MenuItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.ModifierGroup", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Catalog.Domain.Aggregates.MenuItem", null)
+                        .WithMany("ModifierGroups")
+                        .HasForeignKey("MenuItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.ModifierOption", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Catalog.Domain.Entities.ModifierGroup", null)
+                        .WithMany("Options")
+                        .HasForeignKey("ModifierGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>
                 {
                     b.OwnsOne("NextDrop.Modules.Customers.Domain.ValueObjects.CustomerPreferences", "Preferences", b1 =>
@@ -618,6 +900,23 @@ namespace NextDrop.Infrastructure.Migrations
                         .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Aggregates.Catalog", b =>
+                {
+                    b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Aggregates.MenuItem", b =>
+                {
+                    b.Navigation("ModifierGroups");
+
+                    b.Navigation("Variants");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Catalog.Domain.Entities.ModifierGroup", b =>
+                {
+                    b.Navigation("Options");
                 });
 
             modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>

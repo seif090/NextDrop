@@ -108,3 +108,5 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\Nex
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Catalog.Domain.pdb
