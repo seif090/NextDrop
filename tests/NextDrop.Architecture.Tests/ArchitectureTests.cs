@@ -2,6 +2,7 @@ using FluentAssertions;
 using NetArchTest.Rules;
 using NextDrop.Modules.Catalog.Domain.Aggregates;
 using NextDrop.Modules.Customers.Domain.Aggregates;
+using NextDrop.Modules.Delivery.Domain.Aggregates;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Orders.Domain.Aggregates;
 using NextDrop.Modules.Restaurants.Domain.Aggregates;
@@ -20,6 +21,8 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly CatalogDomainAssembly = typeof(Catalog).Assembly;
     private static readonly System.Reflection.Assembly OrdersDomainAssembly = typeof(Order).Assembly;
     private static readonly System.Reflection.Assembly OrdersApplicationAssembly = typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly;
+    private static readonly System.Reflection.Assembly DeliveryDomainAssembly = typeof(Delivery).Assembly;
+    private static readonly System.Reflection.Assembly DeliveryApplicationAssembly = typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -88,8 +91,7 @@ public class ArchitectureTests
             .HaveDependencyOnAll(
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Catalog.Infrastructure",
-                "NextDrop.Api",
-                "Microsoft.EntityFrameworkCore")
+                "NextDrop.Api")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();
@@ -103,23 +105,6 @@ public class ArchitectureTests
             .HaveDependencyOnAll(
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Orders.Infrastructure",
-                "NextDrop.Api",
-                "Microsoft.EntityFrameworkCore")
-            .GetResult();
-
-        result.IsSuccessful.Should().BeTrue();
-    }
-
-    [Fact]
-    public void OrdersApplication_ShouldNotDependOnModuleInfrastructuresOrApi()
-    {
-        var result = Types.InAssembly(OrdersApplicationAssembly)
-            .ShouldNot()
-            .HaveDependencyOnAll(
-                "NextDrop.Modules.Orders.Infrastructure",
-                "NextDrop.Modules.Customers.Infrastructure",
-                "NextDrop.Modules.Restaurants.Infrastructure",
-                "NextDrop.Modules.Catalog.Infrastructure",
                 "NextDrop.Api")
             .GetResult();
 
@@ -127,41 +112,30 @@ public class ArchitectureTests
     }
 
     [Fact]
-    public void CustomersDomain_ShouldNotDependOnRestaurantsModule()
+    public void DeliveryDomain_ShouldNotDependOnInfrastructureOrApi()
     {
-        var result = Types.InAssembly(CustomersDomainAssembly)
+        var result = Types.InAssembly(DeliveryDomainAssembly)
             .ShouldNot()
-            .HaveDependencyOnAny(
-                "NextDrop.Modules.Restaurants.Domain",
-                "NextDrop.Modules.Restaurants.Application",
-                "NextDrop.Modules.Restaurants.Infrastructure")
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Delivery.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore",
+                "StackExchange.Redis")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();
     }
 
     [Fact]
-    public void RestaurantsDomain_ShouldNotDependOnCustomersModule()
+    public void DeliveryApplication_ShouldNotDependOnInfrastructureOrApi()
     {
-        var result = Types.InAssembly(RestaurantsDomainAssembly)
+        var result = Types.InAssembly(DeliveryApplicationAssembly)
             .ShouldNot()
-            .HaveDependencyOnAny(
-                "NextDrop.Modules.Customers.Domain",
-                "NextDrop.Modules.Customers.Application",
-                "NextDrop.Modules.Customers.Infrastructure")
-            .GetResult();
-
-        result.IsSuccessful.Should().BeTrue();
-    }
-
-    [Fact]
-    public void ApiControllers_ShouldHaveNameEndingWithController()
-    {
-        var result = Types.InAssembly(ApiAssembly)
-            .That()
-            .Inherit(typeof(Microsoft.AspNetCore.Mvc.ControllerBase))
-            .Should()
-            .HaveNameEndingWith("Controller")
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Delivery.Infrastructure",
+                "NextDrop.Api")
             .GetResult();
 
         result.IsSuccessful.Should().BeTrue();

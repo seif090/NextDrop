@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDrop.Modules.Restaurants.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579509ba7eca7ad8247de1b8963654c8c4023f94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45620713174d1bd439454c53ba84dbc72291f562")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDrop.Modules.Restaurants.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDrop.Modules.Restaurants.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

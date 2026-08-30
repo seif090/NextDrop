@@ -3,6 +3,7 @@ using NextDrop.Infrastructure.Persistence.Interceptors;
 using NextDrop.Infrastructure.Persistence.Outbox;
 using NextDrop.Modules.Catalog.Domain.Aggregates;
 using NextDrop.Modules.Catalog.Domain.Entities;
+using NextDrop.Modules.Delivery.Domain.Aggregates;
 using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Identity.Domain.Entities;
 using NextDrop.Modules.Orders.Domain.Aggregates;
@@ -34,6 +35,8 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<CartItem> CartItems => Set<CartItem>();
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+    public DbSet<Rider> Riders => Set<Rider>();
+    public DbSet<NextDrop.Modules.Delivery.Domain.Aggregates.Delivery> Deliveries => Set<NextDrop.Modules.Delivery.Domain.Aggregates.Delivery>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -48,10 +51,5 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(NextDropDbContext).Assembly);
         base.OnModelCreating(modelBuilder);
-    }
-
-    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-    {
-        return await base.SaveChangesAsync(cancellationToken);
     }
 }

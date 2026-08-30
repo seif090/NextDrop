@@ -1,0 +1,1314 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Infrastructure\\NextDrop.Modules.Delivery.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj",
+        "projectName": "NextDrop.Modules.Catalog.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj",
+        "projectName": "NextDrop.Modules.Catalog.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj",
+        "projectName": "NextDrop.Modules.Customers.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj",
+        "projectName": "NextDrop.Modules.Customers.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj",
+        "projectName": "NextDrop.Modules.Delivery.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj",
+        "projectName": "NextDrop.Modules.Delivery.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Infrastructure\\NextDrop.Modules.Delivery.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Infrastructure\\NextDrop.Modules.Delivery.Infrastructure.csproj",
+        "projectName": "NextDrop.Modules.Delivery.Infrastructure",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Infrastructure\\NextDrop.Modules.Delivery.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\NextDrop.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\NextDrop.Infrastructure.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj",
+        "projectName": "NextDrop.Modules.Identity.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj",
+        "projectName": "NextDrop.Modules.Identity.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj",
+        "projectName": "NextDrop.Modules.Orders.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj",
+        "projectName": "NextDrop.Modules.Orders.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj",
+        "projectName": "NextDrop.Modules.Restaurants.Application",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj",
+        "projectName": "NextDrop.Modules.Restaurants.Domain",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\NextDrop.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\NextDrop.Infrastructure.csproj",
+        "projectName": "NextDrop.Infrastructure",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\NextDrop.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Application\\NextDrop.Modules.Catalog.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Catalog\\NextDrop.Modules.Catalog.Domain\\NextDrop.Modules.Catalog.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Application\\NextDrop.Modules.Customers.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Customers\\NextDrop.Modules.Customers.Domain\\NextDrop.Modules.Customers.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Application\\NextDrop.Modules.Delivery.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Delivery\\NextDrop.Modules.Delivery.Domain\\NextDrop.Modules.Delivery.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Application\\NextDrop.Modules.Identity.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Identity\\NextDrop.Modules.Identity.Domain\\NextDrop.Modules.Identity.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Application\\NextDrop.Modules.Orders.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Orders\\NextDrop.Modules.Orders.Domain\\NextDrop.Modules.Orders.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Application\\NextDrop.Modules.Restaurants.Application.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Restaurants\\NextDrop.Modules.Restaurants.Domain\\NextDrop.Modules.Restaurants.Domain.csproj"
+              },
+              "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.79, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.25, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.25, )"
+            },
+            "Hangfire.PostgreSql": {
+              "target": "Package",
+              "version": "[1.21.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj",
+        "projectName": "NextDrop.SharedKernel",
+        "projectPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\NextDrop.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\seaif\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\NextDrop.SharedKernel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seaif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

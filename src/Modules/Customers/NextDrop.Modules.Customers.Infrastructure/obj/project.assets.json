@@ -1214,6 +1214,8 @@
           "NextDrop.Modules.Catalog.Domain": "1.0.0",
           "NextDrop.Modules.Customers.Application": "1.0.0",
           "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Delivery.Application": "1.0.0",
+          "NextDrop.Modules.Delivery.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
           "NextDrop.Modules.Identity.Domain": "1.0.0",
           "NextDrop.Modules.Orders.Application": "1.0.0",
@@ -1296,6 +1298,45 @@
         },
         "runtime": {
           "bin/placeholder/NextDrop.Modules.Customers.Domain.dll": {}
+        }
+      },
+      "NextDrop.Modules.Delivery.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+          "MediatR": "12.4.1",
+          "NextDrop.Modules.Customers.Application": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Delivery.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Application": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Delivery.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Delivery.Application.dll": {}
+        }
+      },
+      "NextDrop.Modules.Delivery.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.Modules.Orders.Domain": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NextDrop.Modules.Delivery.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NextDrop.Modules.Delivery.Domain.dll": {}
         }
       },
       "NextDrop.Modules.Identity.Application/1.0.0": {
@@ -3280,6 +3321,16 @@
       "type": "project",
       "path": "../NextDrop.Modules.Customers.Domain/NextDrop.Modules.Customers.Domain.csproj",
       "msbuildProject": "../NextDrop.Modules.Customers.Domain/NextDrop.Modules.Customers.Domain.csproj"
+    },
+    "NextDrop.Modules.Delivery.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Delivery/NextDrop.Modules.Delivery.Application/NextDrop.Modules.Delivery.Application.csproj",
+      "msbuildProject": "../../Delivery/NextDrop.Modules.Delivery.Application/NextDrop.Modules.Delivery.Application.csproj"
+    },
+    "NextDrop.Modules.Delivery.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Delivery/NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj",
+      "msbuildProject": "../../Delivery/NextDrop.Modules.Delivery.Domain/NextDrop.Modules.Delivery.Domain.csproj"
     },
     "NextDrop.Modules.Identity.Application/1.0.0": {
       "type": "project",

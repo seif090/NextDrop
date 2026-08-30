@@ -419,6 +419,125 @@ namespace NextDrop.Infrastructure.Migrations
                     b.ToTable("customer_addresses", "customers");
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Delivery.Domain.Aggregates.Delivery", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset?>("DeliveredAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("FailedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FailureReason")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset?>("PickedUpAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("PickupAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("RiderId")
+                        .HasColumnType("uuid");
+
+                    b.Property<uint>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("xid")
+                        .HasColumnName("xmin");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BranchId");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("RiderId");
+
+                    b.HasIndex("Status");
+
+                    b.ToTable("deliveries", "delivery");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Delivery.Domain.Aggregates.Rider", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AvailabilityStatus")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset?>("LastLocationUpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<uint>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("xid")
+                        .HasColumnName("xmin");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("riders", "delivery");
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Identity.Domain.Aggregates.User.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -1035,6 +1154,81 @@ namespace NextDrop.Infrastructure.Migrations
                         .WithMany("Addresses")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Delivery.Domain.Aggregates.Rider", b =>
+                {
+                    b.OwnsOne("NextDrop.Modules.Delivery.Domain.ValueObjects.Location", "CurrentLocation", b1 =>
+                        {
+                            b1.Property<Guid>("RiderId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<double?>("Accuracy")
+                                .HasColumnType("double precision")
+                                .HasColumnName("accuracy");
+
+                            b1.Property<double?>("Heading")
+                                .HasColumnType("double precision")
+                                .HasColumnName("heading");
+
+                            b1.Property<decimal>("Latitude")
+                                .HasColumnType("numeric(18,8)")
+                                .HasColumnName("latitude");
+
+                            b1.Property<decimal>("Longitude")
+                                .HasColumnType("numeric(18,8)")
+                                .HasColumnName("longitude");
+
+                            b1.Property<DateTimeOffset>("RecordedAtUtc")
+                                .HasColumnType("timestamp with time zone")
+                                .HasColumnName("recorded_at_utc");
+
+                            b1.Property<double?>("Speed")
+                                .HasColumnType("double precision")
+                                .HasColumnName("speed");
+
+                            b1.HasKey("RiderId");
+
+                            b1.ToTable("riders", "delivery");
+
+                            b1.WithOwner()
+                                .HasForeignKey("RiderId");
+                        });
+
+                    b.OwnsOne("NextDrop.Modules.Delivery.Domain.ValueObjects.Vehicle", "Vehicle", b1 =>
+                        {
+                            b1.Property<Guid>("RiderId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("Description")
+                                .HasMaxLength(200)
+                                .HasColumnType("character varying(200)")
+                                .HasColumnName("vehicle_description");
+
+                            b1.Property<string>("PlateNumber")
+                                .IsRequired()
+                                .HasMaxLength(50)
+                                .HasColumnType("character varying(50)")
+                                .HasColumnName("vehicle_plate_number");
+
+                            b1.Property<string>("Type")
+                                .IsRequired()
+                                .HasMaxLength(30)
+                                .HasColumnType("character varying(30)")
+                                .HasColumnName("vehicle_type");
+
+                            b1.HasKey("RiderId");
+
+                            b1.ToTable("riders", "delivery");
+
+                            b1.WithOwner()
+                                .HasForeignKey("RiderId");
+                        });
+
+                    b.Navigation("CurrentLocation");
+
+                    b.Navigation("Vehicle")
                         .IsRequired();
                 });
 
