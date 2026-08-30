@@ -30,6 +30,11 @@
     <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Domain/NextDrop.Modules.Orders.Domain.csproj" />
     <Project Path="src/Modules/Orders/NextDrop.Modules.Orders.Infrastructure/NextDrop.Modules.Orders.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/Payments/">
+    <Project Path="src/Modules/Payments/NextDrop.Modules.Payments.Application/NextDrop.Modules.Payments.Application.csproj" />
+    <Project Path="src/Modules/Payments/NextDrop.Modules.Payments.Domain/NextDrop.Modules.Payments.Domain.csproj" />
+    <Project Path="src/Modules/Payments/NextDrop.Modules.Payments.Infrastructure/NextDrop.Modules.Payments.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Restaurants/">
     <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Application/NextDrop.Modules.Restaurants.Application.csproj" />
     <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Domain/NextDrop.Modules.Restaurants.Domain.csproj" />

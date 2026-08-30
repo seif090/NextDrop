@@ -134,32 +134,70 @@ public class Order : AggregateRoot<OrderId>
 
     public Result Confirm(DateTimeOffset now)
     {
-        if (Status != OrderStatus.Pending)
+        if (Status != OrderStatus.Pending && Status != OrderStatus.Paid && Status != OrderStatus.PendingPayment)
             return Result.Failure(Error.Conflict("Order.InvalidTransition", $"Cannot confirm order in status {Status}."));
 
+        var oldStatus = Status;
         Status = OrderStatus.Confirmed;
         ConfirmedAtUtc = now;
         UpdatedAtUtc = now;
 
         AddDomainEvent(new OrderConfirmedDomainEvent(Id));
-        AddDomainEvent(new OrderStatusChangedDomainEvent(Id, OrderStatus.Pending, OrderStatus.Confirmed));
+        AddDomainEvent(new OrderStatusChangedDomainEvent(Id, oldStatus, OrderStatus.Confirmed));
+        return Result.Success();
+    }
+
+    public Result MarkPaid(DateTimeOffset now)
+    {
+        if (Status == OrderStatus.Delivered || Status == OrderStatus.Cancelled || Status == OrderStatus.Refunded)
+            return Result.Failure(Error.Conflict("Order.TerminalState", $"Cannot mark paid on order in terminal state {Status}."));
+
+        var oldStatus = Status;
+        Status = OrderStatus.Paid;
+        UpdatedAtUtc = now;
+
+        AddDomainEvent(new OrderStatusChangedDomainEvent(Id, oldStatus, OrderStatus.Paid));
+        return Result.Success();
+    }
+
+    public Result MarkRefunded(DateTimeOffset now)
+    {
+        if (Status == OrderStatus.Refunded)
+            return Result.Failure(Error.Conflict("Order.AlreadyRefunded", "Order has already been refunded."));
+
+        var oldStatus = Status;
+        Status = OrderStatus.Refunded;
+        UpdatedAtUtc = now;
+
+        AddDomainEvent(new OrderStatusChangedDomainEvent(Id, oldStatus, OrderStatus.Refunded));
         return Result.Success();
     }
 
     public Result TransitionTo(OrderStatus newStatus, DateTimeOffset now)
     {
-        if (Status == OrderStatus.Delivered || Status == OrderStatus.Cancelled)
+        if (Status == OrderStatus.Delivered || Status == OrderStatus.Cancelled || Status == OrderStatus.Refunded || Status == OrderStatus.Failed)
             return Result.Failure(Error.Conflict("Order.TerminalState", $"Cannot change status of a terminal order ({Status})."));
 
         var isAllowed = (Status, newStatus) switch
         {
+            (OrderStatus.PendingPayment, OrderStatus.Paid) => true,
+            (OrderStatus.PendingPayment, OrderStatus.Pending) => true,
+            (OrderStatus.PendingPayment, OrderStatus.Cancelled) => true,
+            (OrderStatus.PendingPayment, OrderStatus.Failed) => true,
+            (OrderStatus.Pending, OrderStatus.Paid) => true,
             (OrderStatus.Pending, OrderStatus.Confirmed) => true,
             (OrderStatus.Pending, OrderStatus.Cancelled) => true,
+            (OrderStatus.Paid, OrderStatus.Confirmed) => true,
+            (OrderStatus.Paid, OrderStatus.Preparing) => true,
+            (OrderStatus.Paid, OrderStatus.Cancelled) => true,
+            (OrderStatus.Paid, OrderStatus.Refunded) => true,
             (OrderStatus.Confirmed, OrderStatus.Preparing) => true,
             (OrderStatus.Confirmed, OrderStatus.Cancelled) => true,
             (OrderStatus.Preparing, OrderStatus.ReadyForDelivery) => true,
             (OrderStatus.Preparing, OrderStatus.Cancelled) => true,
+            (OrderStatus.ReadyForDelivery, OrderStatus.PickedUp) => true,
             (OrderStatus.ReadyForDelivery, OrderStatus.OutForDelivery) => true,
+            (OrderStatus.PickedUp, OrderStatus.OutForDelivery) => true,
             (OrderStatus.OutForDelivery, OrderStatus.Delivered) => true,
             _ => false
         };
@@ -180,10 +218,10 @@ public class Order : AggregateRoot<OrderId>
 
     public Result Cancel(string reason, DateTimeOffset now)
     {
-        if (Status == OrderStatus.Delivered || Status == OrderStatus.Cancelled)
+        if (Status == OrderStatus.Delivered || Status == OrderStatus.Cancelled || Status == OrderStatus.Refunded)
             return Result.Failure(Error.Conflict("Order.TerminalState", $"Cannot cancel order in terminal state ({Status})."));
 
-        if (Status == OrderStatus.ReadyForDelivery || Status == OrderStatus.OutForDelivery)
+        if (Status == OrderStatus.ReadyForDelivery || Status == OrderStatus.PickedUp || Status == OrderStatus.OutForDelivery)
             return Result.Failure(Error.Conflict("Order.CannotCancelInTransit", $"Cannot cancel order once it is {Status}."));
 
         if (string.IsNullOrWhiteSpace(reason))

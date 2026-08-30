@@ -33,6 +33,8 @@
     <ProjectReference Include="..\..\src\Modules\Orders\NextDrop.Modules.Orders.Domain\NextDrop.Modules.Orders.Domain.csproj" />
     <ProjectReference Include="..\..\src\Modules\Delivery\NextDrop.Modules.Delivery.Application\NextDrop.Modules.Delivery.Application.csproj" />
     <ProjectReference Include="..\..\src\Modules\Delivery\NextDrop.Modules.Delivery.Domain\NextDrop.Modules.Delivery.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Payments\NextDrop.Modules.Payments.Application\NextDrop.Modules.Payments.Application.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Payments\NextDrop.Modules.Payments.Domain\NextDrop.Modules.Payments.Domain.csproj" />
   </ItemGroup>
 
 </Project>

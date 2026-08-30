@@ -239,3 +239,9 @@ C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modul
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Delivery.Infrastructure.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Delivery.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Delivery.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb

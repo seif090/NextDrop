@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "sNqBaa6aggc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\seaif\\Desktop\\NextDrop\\src\\Modules\\Payments\\NextDrop.Modules.Payments.Application\\NextDrop.Modules.Payments.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seaif\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\seaif\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
+    "C:\\Users\\seaif\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\seaif\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\seaif\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

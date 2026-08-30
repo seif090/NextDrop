@@ -8,6 +8,7 @@ using NextDrop.Modules.Identity.Domain.Aggregates.User;
 using NextDrop.Modules.Identity.Domain.Entities;
 using NextDrop.Modules.Orders.Domain.Aggregates;
 using NextDrop.Modules.Orders.Domain.Entities;
+using NextDrop.Modules.Payments.Domain.Aggregates;
 using NextDrop.SharedKernel.Abstractions;
 
 namespace NextDrop.Infrastructure.Persistence;
@@ -37,6 +38,9 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
     public DbSet<Rider> Riders => Set<Rider>();
     public DbSet<NextDrop.Modules.Delivery.Domain.Aggregates.Delivery> Deliveries => Set<NextDrop.Modules.Delivery.Domain.Aggregates.Delivery>();
+    public DbSet<Payment> Payments => Set<Payment>();
+    public DbSet<Refund> Refunds => Set<Refund>();
+    public DbSet<WebhookEvent> WebhookEvents => Set<WebhookEvent>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

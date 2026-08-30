@@ -40,3 +40,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaur
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Delivery.Domain.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Delivery.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Delivery.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb

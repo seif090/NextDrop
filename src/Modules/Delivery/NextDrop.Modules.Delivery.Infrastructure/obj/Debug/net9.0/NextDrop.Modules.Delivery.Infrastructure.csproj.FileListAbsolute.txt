@@ -40,3 +40,7 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.I
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\obj\Debug\net9.0\refint\NextDrop.Modules.Delivery.Infrastructure.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\obj\Debug\net9.0\NextDrop.Modules.Delivery.Infrastructure.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\obj\Debug\net9.0\ref\NextDrop.Modules.Delivery.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\bin\Debug\net9.0\NextDrop.Modules.Payments.Domain.pdb

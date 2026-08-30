@@ -17,6 +17,9 @@
     <ProjectReference Include="..\Modules\Delivery\NextDrop.Modules.Delivery.Infrastructure\NextDrop.Modules.Delivery.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Delivery\NextDrop.Modules.Delivery.Application\NextDrop.Modules.Delivery.Application.csproj" />
     <ProjectReference Include="..\Modules\Delivery\NextDrop.Modules.Delivery.Domain\NextDrop.Modules.Delivery.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Payments\NextDrop.Modules.Payments.Infrastructure\NextDrop.Modules.Payments.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Payments\NextDrop.Modules.Payments.Application\NextDrop.Modules.Payments.Application.csproj" />
+    <ProjectReference Include="..\Modules\Payments\NextDrop.Modules.Payments.Domain\NextDrop.Modules.Payments.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

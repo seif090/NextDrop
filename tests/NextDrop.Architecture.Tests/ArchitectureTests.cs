@@ -23,6 +23,8 @@ public class ArchitectureTests
     private static readonly System.Reflection.Assembly OrdersApplicationAssembly = typeof(NextDrop.Modules.Orders.Application.Commands.CreateCartCommand).Assembly;
     private static readonly System.Reflection.Assembly DeliveryDomainAssembly = typeof(Delivery).Assembly;
     private static readonly System.Reflection.Assembly DeliveryApplicationAssembly = typeof(NextDrop.Modules.Delivery.Application.Commands.CreateRiderCommand).Assembly;
+    private static readonly System.Reflection.Assembly PaymentsDomainAssembly = typeof(NextDrop.Modules.Payments.Domain.Aggregates.Payment).Assembly;
+    private static readonly System.Reflection.Assembly PaymentsApplicationAssembly = typeof(NextDrop.Modules.Payments.Application.Commands.CheckoutCommand).Assembly;
     private static readonly System.Reflection.Assembly ApiAssembly = typeof(Program).Assembly;
 
     [Fact]
@@ -135,6 +137,36 @@ public class ArchitectureTests
             .HaveDependencyOnAll(
                 "NextDrop.Infrastructure",
                 "NextDrop.Modules.Delivery.Infrastructure",
+                "NextDrop.Api")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void PaymentsDomain_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(PaymentsDomainAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Payments.Infrastructure",
+                "NextDrop.Api",
+                "Microsoft.EntityFrameworkCore",
+                "StackExchange.Redis")
+            .GetResult();
+
+        result.IsSuccessful.Should().BeTrue();
+    }
+
+    [Fact]
+    public void PaymentsApplication_ShouldNotDependOnInfrastructureOrApi()
+    {
+        var result = Types.InAssembly(PaymentsApplicationAssembly)
+            .ShouldNot()
+            .HaveDependencyOnAll(
+                "NextDrop.Infrastructure",
+                "NextDrop.Modules.Payments.Infrastructure",
                 "NextDrop.Api")
             .GetResult();
 
