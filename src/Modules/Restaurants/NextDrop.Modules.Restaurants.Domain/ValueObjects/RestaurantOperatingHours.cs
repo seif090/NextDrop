@@ -31,16 +31,16 @@ public class RestaurantOperatingHours : ValueObject
             return false;
 
         if (OpenTime == CloseTime)
-            return true; // 24 hours open
+            return false; // OpenTime == CloseTime is invalid / closed per Sprint 2 spec
 
         if (CloseTime > OpenTime)
         {
-            // Standard same-day schedule (e.g., 09:00 to 22:00)
-            return localTime >= OpenTime && localTime <= CloseTime;
+            // Standard same-day schedule (e.g., 09:00 to 22:00; open from 09:00 until 22:00)
+            return localTime >= OpenTime && localTime < CloseTime;
         }
 
-        // Overnight schedule (e.g., 18:00 to 02:00)
-        return localTime >= OpenTime || localTime <= CloseTime;
+        // Overnight schedule (e.g., 18:00 to 02:00; open from 18:00 to midnight, and midnight until 02:00)
+        return localTime >= OpenTime || localTime < CloseTime;
     }
 
     protected override IEnumerable<object?> GetEqualityComponents()

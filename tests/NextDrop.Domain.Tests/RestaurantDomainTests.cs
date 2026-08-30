@@ -46,10 +46,11 @@ public class RestaurantDomainTests
     }
 
     [Theory]
+    [InlineData("09:00", true)]  // Exactly open boundary
     [InlineData("10:00", true)]  // Daytime open
+    [InlineData("21:59", true)]  // Right before close
+    [InlineData("22:00", false)] // Exactly close boundary (Section 20 spec: closing time is closed)
     [InlineData("08:59", false)] // Before open
-    [InlineData("22:00", true)]  // Exactly close
-    [InlineData("22:01", false)] // After close
     public void OperatingHours_StandardDaytimeSchedule_ShouldEvaluateCorrectly(string timeString, bool expectedOpen)
     {
         // Arrange: 09:00 to 22:00 on Monday
@@ -66,11 +67,13 @@ public class RestaurantDomainTests
     }
 
     [Theory]
+    [InlineData("18:00", true)]  // Exactly open boundary
     [InlineData("19:00", true)]  // Evening open
     [InlineData("23:59", true)]  // Midnight open
-    [InlineData("01:30", true)]  // Early morning open
-    [InlineData("02:00", true)]  // Exactly close boundary
-    [InlineData("02:01", false)] // Past close
+    [InlineData("00:30", true)]  // Early morning open
+    [InlineData("01:59", true)]  // Right before close
+    [InlineData("02:00", false)] // Exactly close boundary (Section 20 spec: 02:00 -> CLOSED)
+    [InlineData("03:00", false)] // After close
     [InlineData("17:59", false)] // Before evening open
     public void OperatingHours_OvernightSchedule_ShouldEvaluateCorrectly(string timeString, bool expectedOpen)
     {
@@ -85,6 +88,17 @@ public class RestaurantDomainTests
 
         // Assert
         isOpen.Should().Be(expectedOpen);
+    }
+
+    [Fact]
+    public void OperatingHours_EqualOpenAndCloseTimes_ShouldReturnFalse()
+    {
+        // Arrange: OpenTime == CloseTime (Section 20 spec: OpenTime == CloseTime -> INVALID / CLOSED)
+        var schedule = RestaurantOperatingHours.Open(DayOfWeek.Wednesday, new TimeOnly(9, 0), new TimeOnly(9, 0));
+
+        // Act & Assert
+        schedule.IsOpenAt(new TimeOnly(9, 0)).Should().BeFalse();
+        schedule.IsOpenAt(new TimeOnly(12, 0)).Should().BeFalse();
     }
 
     [Fact]
