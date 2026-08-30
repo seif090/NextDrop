@@ -1,0 +1,16 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.A36B0FC9.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\refint\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Customers\NextDrop.Modules.Customers.Domain\obj\Debug\net9.0\ref\NextDrop.Modules.Customers.Domain.dll

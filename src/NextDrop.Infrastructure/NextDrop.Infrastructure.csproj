@@ -1,9 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\NextDrop.SharedKernel\NextDrop.SharedKernel.csproj" />
     <ProjectReference Include="..\Modules\Identity\NextDrop.Modules.Identity.Application\NextDrop.Modules.Identity.Application.csproj" />
     <ProjectReference Include="..\Modules\Identity\NextDrop.Modules.Identity.Domain\NextDrop.Modules.Identity.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Customers\NextDrop.Modules.Customers.Application\NextDrop.Modules.Customers.Application.csproj" />
+    <ProjectReference Include="..\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\NextDrop.Modules.Restaurants.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Restaurants\NextDrop.Modules.Restaurants.Application\NextDrop.Modules.Restaurants.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

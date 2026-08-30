@@ -11,7 +11,11 @@
           "FluentAssertions": "8.10.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "Moq": "4.20.72",
+          "NextDrop.Modules.Customers.Application": "1.0.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
           "NextDrop.Modules.Identity.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Application": "1.0.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
           "NextDrop.SharedKernel": "1.0.0",
           "xunit": "2.9.2"
         },
@@ -498,6 +502,32 @@
           }
         }
       },
+      "NextDrop.Modules.Customers.Application/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.2.0",
+          "NextDrop.Modules.Customers.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Customers.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Customers.Domain/1.0.0": {
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Customers.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NextDrop.Modules.Identity.Application/1.0.0": {
         "dependencies": {
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
@@ -518,6 +548,32 @@
         },
         "runtime": {
           "NextDrop.Modules.Identity.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Restaurants.Application/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "MediatR": "14.2.0",
+          "NextDrop.Modules.Restaurants.Domain": "1.0.0",
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Restaurants.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NextDrop.Modules.Restaurants.Domain/1.0.0": {
+        "dependencies": {
+          "NextDrop.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "NextDrop.Modules.Restaurants.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -721,12 +777,32 @@
       "path": "xunit.extensibility.execution/2.9.2",
       "hashPath": "xunit.extensibility.execution.2.9.2.nupkg.sha512"
     },
+    "NextDrop.Modules.Customers.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Customers.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "NextDrop.Modules.Identity.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "NextDrop.Modules.Identity.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Restaurants.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NextDrop.Modules.Restaurants.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -16,6 +16,8 @@ using NextDrop.Infrastructure.Services;
 using NextDrop.Modules.Identity.Application.Abstractions;
 using NextDrop.Modules.Identity.Infrastructure.Persistence.Repositories;
 using NextDrop.Modules.Identity.Infrastructure.Services;
+using NextDrop.Modules.Customers.Infrastructure;
+using NextDrop.Modules.Restaurants.Infrastructure;
 using NextDrop.SharedKernel.Abstractions;
 using Serilog;
 
@@ -64,6 +66,9 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly));
 
 builder.Services.AddValidatorsFromAssembly(typeof(NextDrop.Modules.Identity.Application.Commands.RegisterUser.RegisterUserCommand).Assembly);
+
+builder.Services.AddCustomersModule();
+builder.Services.AddRestaurantsModule();
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

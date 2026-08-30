@@ -27,6 +27,8 @@
     <ProjectReference Include="..\..\src\Modules\Identity\NextDrop.Modules.Identity.Infrastructure\NextDrop.Modules.Identity.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\NextDrop.Infrastructure\NextDrop.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\NextDrop.Api\NextDrop.Api.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\NextDrop.Modules.Restaurants.Domain.csproj" />
   </ItemGroup>
 
 </Project>

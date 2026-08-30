@@ -23,6 +23,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\NextDrop.Api\NextDrop.Api.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Customers\NextDrop.Modules.Customers.Application\NextDrop.Modules.Customers.Application.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Customers\NextDrop.Modules.Customers.Domain\NextDrop.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Application\NextDrop.Modules.Restaurants.Application.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\NextDrop.Modules.Restaurants.Domain.csproj" />
   </ItemGroup>
 
 </Project>

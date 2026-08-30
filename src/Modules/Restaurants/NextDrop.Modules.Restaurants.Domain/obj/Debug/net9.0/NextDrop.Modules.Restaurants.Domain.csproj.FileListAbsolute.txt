@@ -1,0 +1,16 @@
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.csproj.AssemblyReference.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.AssemblyInfoInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.AssemblyInfo.cs
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.deps.json
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\bin\Debug\net9.0\NextDrop.SharedKernel.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.D0502666.Up2Date
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\refint\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Restaurants\NextDrop.Modules.Restaurants.Domain\obj\Debug\net9.0\ref\NextDrop.Modules.Restaurants.Domain.dll

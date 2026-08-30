@@ -209,3 +209,15 @@ C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\ru\Microsoft.C
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Infrastructure.dll
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Infrastructure.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\src\NextDrop.Api\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb

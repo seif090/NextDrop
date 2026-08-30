@@ -21,6 +21,8 @@ public class NextDropDbContext : DbContext, IUnitOfWork
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<EmailVerificationToken> EmailVerificationTokens => Set<EmailVerificationToken>();
     public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
+    public DbSet<NextDrop.Modules.Customers.Domain.Aggregates.Customer> Customers => Set<NextDrop.Modules.Customers.Domain.Aggregates.Customer>();
+    public DbSet<NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant> Restaurants => Set<NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

@@ -56,6 +56,123 @@ namespace NextDrop.Infrastructure.Migrations
                     b.ToTable("OutboxMessages", "messaging");
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("customers", "customers");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Entities.CustomerAddress", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AddressLine1")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("AddressLine2")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("Apartment")
+                        .HasColumnType("text");
+
+                    b.Property<string>("BuildingNumber")
+                        .HasColumnType("text");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("Floor")
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsDefault")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Label")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<decimal>("Latitude")
+                        .HasPrecision(9, 6)
+                        .HasColumnType("numeric(9,6)");
+
+                    b.Property<decimal>("Longitude")
+                        .HasPrecision(9, 6)
+                        .HasColumnType("numeric(9,6)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("RecipientName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique()
+                        .HasFilter("is_default = true AND is_active = true");
+
+                    b.ToTable("customer_addresses", "customers");
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Identity.Domain.Aggregates.User.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -191,6 +308,240 @@ namespace NextDrop.Infrastructure.Migrations
                     b.ToTable("RefreshTokens", "identity");
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.Property<Guid>("OwnerUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerUserId");
+
+                    b.ToTable("restaurants", "restaurants");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantBranch", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AddressLine1")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("AddressLine2")
+                        .HasColumnType("text");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<decimal>("Latitude")
+                        .HasPrecision(9, 6)
+                        .HasColumnType("numeric(9,6)");
+
+                    b.Property<decimal>("Longitude")
+                        .HasPrecision(9, 6)
+                        .HasColumnType("numeric(9,6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<Guid>("RestaurantId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Timezone")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasDefaultValue("UTC");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("restaurant_branches", "restaurants");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantDeliveryZone", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("DeliveryFee")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<int>("EstimatedDeliveryMinutes")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal>("MinimumOrderAmount")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTimeOffset>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BranchId");
+
+                    b.ToTable("delivery_zones", "restaurants");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantStaffMembership", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("RestaurantId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId", "UserId");
+
+                    b.ToTable("staff_memberships", "restaurants");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>
+                {
+                    b.OwnsOne("NextDrop.Modules.Customers.Domain.ValueObjects.CustomerPreferences", "Preferences", b1 =>
+                        {
+                            b1.Property<Guid>("CustomerId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<bool>("AllowMarketingNotifications")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("boolean")
+                                .HasDefaultValue(true)
+                                .HasColumnName("allow_marketing_notifications");
+
+                            b1.Property<bool>("AllowOrderNotifications")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("boolean")
+                                .HasDefaultValue(true)
+                                .HasColumnName("allow_order_notifications");
+
+                            b1.Property<string>("PreferredCurrency")
+                                .IsRequired()
+                                .ValueGeneratedOnAdd()
+                                .HasMaxLength(10)
+                                .HasColumnType("character varying(10)")
+                                .HasDefaultValue("USD")
+                                .HasColumnName("preferred_currency");
+
+                            b1.Property<string>("PreferredLanguage")
+                                .IsRequired()
+                                .ValueGeneratedOnAdd()
+                                .HasMaxLength(10)
+                                .HasColumnType("character varying(10)")
+                                .HasDefaultValue("en")
+                                .HasColumnName("preferred_language");
+
+                            b1.HasKey("CustomerId");
+
+                            b1.ToTable("customers", "customers");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CustomerId");
+                        });
+
+                    b.Navigation("Preferences")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Entities.CustomerAddress", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Customers.Domain.Aggregates.Customer", null)
+                        .WithMany("Addresses")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Identity.Domain.Entities.EmailVerificationToken", b =>
                 {
                     b.HasOne("NextDrop.Modules.Identity.Domain.Aggregates.User.User", null)
@@ -209,11 +560,88 @@ namespace NextDrop.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantBranch", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant", null)
+                        .WithMany("Branches")
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsMany("NextDrop.Modules.Restaurants.Domain.ValueObjects.RestaurantOperatingHours", "OperatingHours", b1 =>
+                        {
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uuid");
+
+                            b1.Property<TimeOnly>("CloseTime")
+                                .HasColumnType("time without time zone");
+
+                            b1.Property<int>("DayOfWeek")
+                                .HasColumnType("integer");
+
+                            b1.Property<bool>("IsClosed")
+                                .HasColumnType("boolean");
+
+                            b1.Property<TimeOnly>("OpenTime")
+                                .HasColumnType("time without time zone");
+
+                            b1.Property<Guid>("RestaurantBranchId")
+                                .HasColumnType("uuid");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("RestaurantBranchId");
+
+                            b1.ToTable("operating_hours", "restaurants");
+
+                            b1.WithOwner()
+                                .HasForeignKey("RestaurantBranchId");
+                        });
+
+                    b.Navigation("OperatingHours");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantDeliveryZone", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantBranch", null)
+                        .WithMany("DeliveryZones")
+                        .HasForeignKey("BranchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantStaffMembership", b =>
+                {
+                    b.HasOne("NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant", null)
+                        .WithMany("StaffMemberships")
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Customers.Domain.Aggregates.Customer", b =>
+                {
+                    b.Navigation("Addresses");
+                });
+
             modelBuilder.Entity("NextDrop.Modules.Identity.Domain.Aggregates.User.User", b =>
                 {
                     b.Navigation("EmailVerificationTokens");
 
                     b.Navigation("RefreshTokens");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Aggregates.Restaurant", b =>
+                {
+                    b.Navigation("Branches");
+
+                    b.Navigation("StaffMemberships");
+                });
+
+            modelBuilder.Entity("NextDrop.Modules.Restaurants.Domain.Entities.RestaurantBranch", b =>
+                {
+                    b.Navigation("DeliveryZones");
                 });
 #pragma warning restore 612, 618
         }

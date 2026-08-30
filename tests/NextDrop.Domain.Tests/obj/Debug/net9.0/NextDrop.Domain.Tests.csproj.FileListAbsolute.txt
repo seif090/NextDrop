@@ -104,3 +104,7 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\obj\Debug\net9.0\Nex
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\obj\Debug\net9.0\NextDrop.Domain.Tests.genruntimeconfig.cache
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\obj\Debug\net9.0\ref\NextDrop.Domain.Tests.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\obj\Debug\net9.0\NextDrop.Domain.Tests.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Domain.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb

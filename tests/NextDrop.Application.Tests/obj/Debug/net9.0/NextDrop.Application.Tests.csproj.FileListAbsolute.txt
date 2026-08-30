@@ -122,3 +122,11 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\NextDrop.Application.Tests.genruntimeconfig.cache
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\ref\NextDrop.Application.Tests.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\NextDrop.Application.Tests.sourcelink.json
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Customers.Domain.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Application.pdb
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\bin\Debug\net9.0\NextDrop.Modules.Restaurants.Domain.pdb

@@ -5,10 +5,20 @@
     <Project Path="src/NextDrop.SharedKernel/NextDrop.SharedKernel.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Customers/">
+    <Project Path="src/Modules/Customers/NextDrop.Modules.Customers.Application/NextDrop.Modules.Customers.Application.csproj" />
+    <Project Path="src/Modules/Customers/NextDrop.Modules.Customers.Domain/NextDrop.Modules.Customers.Domain.csproj" />
+    <Project Path="src/Modules/Customers/NextDrop.Modules.Customers.Infrastructure/NextDrop.Modules.Customers.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Identity/">
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Application/NextDrop.Modules.Identity.Application.csproj" />
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Domain/NextDrop.Modules.Identity.Domain.csproj" />
     <Project Path="src/Modules/Identity/NextDrop.Modules.Identity.Infrastructure/NextDrop.Modules.Identity.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Restaurants/">
+    <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Application/NextDrop.Modules.Restaurants.Application.csproj" />
+    <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Domain/NextDrop.Modules.Restaurants.Domain.csproj" />
+    <Project Path="src/Modules/Restaurants/NextDrop.Modules.Restaurants.Infrastructure/NextDrop.Modules.Restaurants.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/NextDrop.Api.Tests/NextDrop.Api.Tests.csproj" />
