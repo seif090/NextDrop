@@ -121,3 +121,4 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\NextDrop.Application.Tests.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\NextDrop.Application.Tests.genruntimeconfig.cache
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\ref\NextDrop.Application.Tests.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Application.Tests\obj\Debug\net9.0\NextDrop.Application.Tests.sourcelink.json

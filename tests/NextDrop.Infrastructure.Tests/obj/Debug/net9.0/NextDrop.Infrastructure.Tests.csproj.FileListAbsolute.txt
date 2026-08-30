@@ -184,3 +184,5 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\obj\Debug\ne
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\obj\Debug\net9.0\NextDrop.Infrastructure.Tests.pdb
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\obj\Debug\net9.0\NextDrop.Infrastructure.Tests.genruntimeconfig.cache
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\obj\Debug\net9.0\ref\NextDrop.Infrastructure.Tests.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Infrastructure.Tests\obj\Debug\net9.0\NextDrop.Infrastructure.Tests.sourcelink.json

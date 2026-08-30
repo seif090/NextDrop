@@ -15,3 +15,4 @@ C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.A
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\refint\NextDrop.Modules.Identity.Application.dll
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.pdb
 C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\ref\NextDrop.Modules.Identity.Application.dll
+C:\Users\seaif\Desktop\NextDrop\src\Modules\Identity\NextDrop.Modules.Identity.Application\obj\Debug\net9.0\NextDrop.Modules.Identity.Application.sourcelink.json

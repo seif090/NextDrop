@@ -510,3 +510,4 @@ C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\obj\Debug\net9.0\NextDr
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\obj\Debug\net9.0\NextDrop.Api.Tests.genruntimeconfig.cache
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\obj\Debug\net9.0\ref\NextDrop.Api.Tests.dll
 C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\seaif\Desktop\NextDrop\tests\NextDrop.Api.Tests\obj\Debug\net9.0\NextDrop.Api.Tests.sourcelink.json
